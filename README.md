@@ -5,8 +5,12 @@ Dr. York
 ECE 382
 05 Nov 14
 
+Documentation: Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
+
 Description: Lab 5 is IR signals. Taking lab 3's pong game and making it react to the buttons pressed on a remote control.
+
 **InLab5**
+
 
 **Firmware**
 
@@ -31,7 +35,7 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 | Stop logic 0 half-pulse | 0.0771 | 620 |
 | Stop logic 1 half-pulse | 5.369 | 42952 |
 
-1. Collect 8 samples of timer A counts for each of the following pulse types. Compute the average and standard deviation of each pulse type. I would suggest just grabbing it from the CCS variables tab.
+2. Collect 8 samples of timer A counts for each of the following pulse types. Compute the average and standard deviation of each pulse type. I would suggest just grabbing it from the CCS variables tab.
 
 | Data | Logic half-pulse | Average Count | Avg. Time(ms) | St. Dev. Count | St. Dev. Time(ms) |
 | --- | --- | --- | --- | --- | --- |
@@ -40,10 +44,7 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 | 0 | 0 | 617 | 0.0771 | 3.13 | 0.000392 |
 | 0 | 1 | 617 | 0.0771 | 3.13 | 0.000392 |
 
-Tabulate this information in Excel, label the rows and columns of your table so that I will know what the information in each cell means.
-
-1. For each pulse type list the range of timer A counts that would correctly classify 99.9999426697% of the pulses. This number has something to do with thestandard deviation(hint look at the table in this section).
-2. Let the codes (in hex) for several remote control buttons.
+3.Tabulate this information in Excel, label the rows and columns of your table so that I will know what the information in each cell means.
 
 | Button | code (not including start and stop bits) | Hex |
 | --- | --- | --- |
