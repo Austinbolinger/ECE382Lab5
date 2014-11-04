@@ -11,7 +11,7 @@ Description: Lab 5 is IR signals. Taking lab 3's pong game and making it react t
 
 **Setup**
 This is what the set up looks like in picture form.
-
+https://github.com/Austinbolinger/ECE382Lab8/blob/master/setUp.JPG?=raw
 
 **Firmware**
 
