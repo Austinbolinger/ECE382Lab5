@@ -28,14 +28,16 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 | Data 1 logic 1 half-pulse | 0.206 | 1650  |
 | Data 0 logic 0 half-pulse | 0.0770 | 616 |
 | Data 0 logic 1 half-pulse | 0.0678 | 542 |
-| Stop logic 0 half-pulse | - | - |
-| Stop logic 1 half-pulse | large | large |
+| Stop logic 0 half-pulse | 0.0771 | 620 |
+| Stop logic 1 half-pulse | 3.816 | 30526 |
 
 1. Collect 8 samples of timer A counts for each of the following pulse types. Compute the average and standard deviation of each pulse type. I would suggest just grabbing it from the CCS variables tab.
-  - Data 1, logic 0 half-pulse
-  - Data 1, logic 1 half-pulse
-  - Data 0, logic 0 half-pulse
-  - Data 0, logic 1 half-pulse
+| Data | logic half-pulse | Average Count | Average time (ms) | St. Dev. Count | St. Dev. Time (ms) |
+| --- | --- |
+| 1 | 0 | 507.6 | 0.00635 | 25.3 | 0.00316 |
+| 1 | 1 | 1621.9 | 0.203 | 28.99 | 0.00362 |
+| 0 | 0 | 617 | 0.0771 | 3.13 | 0.000392 |
+| 0 | 1 | 617 | 0.0771 | 3.13 | 0.000392 |
 
 Tabulate this information in Excel, label the rows and columns of your table so that I will know what the information in each cell means.
 
