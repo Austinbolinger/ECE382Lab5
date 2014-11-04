@@ -13,7 +13,7 @@ Description: Lab 5 is IR signals. Taking lab 3's pong game and making it react t
 This is what the set up looks like in picture form.
 ![set up]( https://github.com/Austinbolinger/ECE382Lab8/blob/master/setUp.JPG?raw=true "Set Up" )
 
-O is for Output pin. G is for Ground pin. Vcc is for the power pin.
+O is for Output pin. G is for Ground pin. Vcc is for the power pin. And, the Output pin was actually attached to the Xin pin on the MSP430 not the port 1.3.
 
 **Firmware**
 
