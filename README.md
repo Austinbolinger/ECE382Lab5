@@ -33,7 +33,7 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 
 1. Collect 8 samples of timer A counts for each of the following pulse types. Compute the average and standard deviation of each pulse type. I would suggest just grabbing it from the CCS variables tab.
 | Data | logic half-pulse | Average Count | Average time (ms) | St. Dev. Count | St. Dev. Time (ms) |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | 1 | 0 | 507.6 | 0.00635 | 25.3 | 0.00316 |
 | 1 | 1 | 1621.9 | 0.203 | 28.99 | 0.00362 |
 | 0 | 0 | 617 | 0.0771 | 3.13 | 0.000392 |
