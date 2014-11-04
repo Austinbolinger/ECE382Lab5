@@ -29,7 +29,7 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 | Data 0 logic 0 half-pulse | 0.0770 | 616 |
 | Data 0 logic 1 half-pulse | 0.0678 | 542 |
 | Stop logic 0 half-pulse | 0.0771 | 620 |
-| Stop logic 1 half-pulse | 3.816 | 30526 |
+| Stop logic 1 half-pulse | 5.369 | 42952 |
 
 1. Collect 8 samples of timer A counts for each of the following pulse types. Compute the average and standard deviation of each pulse type. I would suggest just grabbing it from the CCS variables tab.
 
@@ -47,12 +47,21 @@ Tabulate this information in Excel, label the rows and columns of your table so 
 
 | Button | code (not including start and stop bits) |
 | --- | --- |
-| 0 |  |
-| 1 |  |
-| 2 |  |
-| 3 |  |
-| Power |  |
-| VOL + |  |
-| VOL - |  |
-| CH + |  |
-| CH - |  |
+| 0 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	1	0	0	0	0	0	1	1	0	1	1	1	1	1
+ |
+| 1 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+ |
+| 2 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
+ |
+| 3 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1	1	1
+ |
+| Power | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	1	1	1	1
+ |
+| VOL + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	1	1	0	0	1	1	1	1	1
+ |
+| VOL - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	1	1	0	0	0	0	0	1	0	0	1	1	1	1	1
+ |
+| CH + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	1	0	1	1	1	1	1
+ |
+| CH - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1
+  |
