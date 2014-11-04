@@ -32,6 +32,7 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 | Stop logic 1 half-pulse | 3.816 | 30526 |
 
 1. Collect 8 samples of timer A counts for each of the following pulse types. Compute the average and standard deviation of each pulse type. I would suggest just grabbing it from the CCS variables tab.
+
 | Data | Logic half-pulse | Average Count | Avg. Time(ms) | St. Dev. Count | St. Dev. Time(ms) |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 0 | 507.6 | 0.00635 | 25.3 | 0.00316 |
