@@ -45,23 +45,23 @@ Tabulate this information in Excel, label the rows and columns of your table so 
 1. For each pulse type list the range of timer A counts that would correctly classify 99.9999426697% of the pulses. This number has something to do with thestandard deviation(hint look at the table in this section).
 2. Let the codes (in hex) for several remote control buttons.
 
-| Button | code (not including start and stop bits) |
-| --- | --- |
+| Button | code (not including start and stop bits) | Hex |
+| --- | --- | --- |
 | 0 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	1	0	0	0	0	0	1	1	0	1	1	1	1	1
- |
+ | C34120DF |
 | 1 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
- |
+ | C34001FF |
 | 2 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
- |
+ | C34100FF |
 | 3 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1	1	1
- |
+ | C340817F |
 | Power | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	1	1	1	1
- |
+ | C341E01F |
 | VOL + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	1	1	0	0	1	1	1	1	1
- |
+ | C340619F |
 | VOL - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	1	1	0	0	0	0	0	1	0	0	1	1	1	1	1
- |
+ | C341609F |
 | CH + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	1	0	1	1	1	1	1
- |
+ | C340A15F |
 | CH - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1
-  |
+  | C341A05F |
