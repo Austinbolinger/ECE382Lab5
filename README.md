@@ -37,7 +37,7 @@ If you look at the picture below, you can see that I mapped out the time0 before
 
 | Pulse | Duration (ms) | timer A counts |
 | --- | --- | --- |
-| Start logic 0 half-pulse | 1.11 |  8950 |
+| Start logic 0 half-pulse | 1.11 |  89450 |
 | Start logic 1 half-pulse | 0.553  | 4420 |
 | Data 1 logic 0 half-pulse | 0.0770 | 616  |
 | Data 1 logic 1 half-pulse | 0.206 | 1650  |
