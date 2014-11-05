@@ -24,6 +24,10 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 2. How long does each timer count last?
   It counts up to 0xFFFF
 3. The while(1) loop in main reads in the ir pules in the for loop. Annotate the picture below to describe the which lines of the for loop the program is executed at which part of the pulse. You should show a total of 6 lines of code (lines 32-34 and lines 36-38).
+  Lines 32-34, write to timer 0 which is the count for the bottom line of the IR wave. Lines 36-38, write to timer 1 which is the count length for the top line, high signal, for the IR wave.
+
+![IR Wave]( https://github.com/Austinbolinger/ECE382Lab8/blob/master/irWave.gif?raw=true "IR Wave" )
+
 
 **IR data packets**
 
