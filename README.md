@@ -20,7 +20,9 @@ O is for Output pin. G is for Ground pin. Vcc is for the power pin. And, the Out
 Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 
 1. How long will it take the timer to roll over?
+  65535/8000000= 8.192ms
 2. How long does each timer count last?
+  It counts up to 0xFFFF
 3. The while(1) loop in main reads in the ir pules in the for loop. Annotate the picture below to describe the which lines of the for loop the program is executed at which part of the pulse. You should show a total of 6 lines of code (lines 32-34 and lines 36-38).
 
 **IR data packets**
