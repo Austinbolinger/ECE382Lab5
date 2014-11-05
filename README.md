@@ -1,8 +1,11 @@
 ECE382Lab8
 ==========
 Austin Bolinger
+
 Dr. York
+
 ECE 382
+
 05 Nov 14
 
 Documentation: Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
