@@ -1,8 +1,11 @@
 ECE382Lab8
 ==========
 Austin Bolinger
+
 Dr. York
+
 ECE 382
+
 05 Nov 14
 
 Documentation: Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
@@ -24,6 +27,10 @@ Project built around [test5.c](http://ecse.bd.psu.edu/cmpen352/lab/lab5/test5.c)
 2. How long does each timer count last?
   It counts up to 0xFFFF
 3. The while(1) loop in main reads in the ir pules in the for loop. Annotate the picture below to describe the which lines of the for loop the program is executed at which part of the pulse. You should show a total of 6 lines of code (lines 32-34 and lines 36-38).
+  Lines 32-34, write to timer 0 which is the count for the bottom line of the IR wave. Lines 36-38, write to timer 1 which is the count length for the top line, high signal, for the IR wave.
+
+![IR Wave]( https://github.com/Austinbolinger/ECE382Lab8/blob/master/irWave.gif?raw=true "IR Wave" )
+
 
 **IR data packets**
 
@@ -61,12 +68,12 @@ If you look at the picture below, you can see that I mapped out the time0 before
 
 | Button | code (not including start and stop bits) | Hex |
 | --- | --- | --- |
-| 0 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	1	0	0	0	0	0	1	1	0	1	1	1	1	1 | C34120DF |
-| 1 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1 | C34001FF |
-| 2 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1 | C34100FF |
-| 3 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1	1	1 | C340817F |
-| Power | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	1	1	1	1 | C341E01F |
-| VOL + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	1	1	0	0	1	1	1	1	1 | C340619F |
-| VOL - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	1	1	0	0	0	0	0	1	0	0	1	1	1	1	1 | C341609F |
-| CH + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	1	0	1	1	1	1	1 | C340A15F |
-| CH - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1  | C341A05F |
+| 0 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	1	0	0	0	0	0	1	1	0	1	1	1	1	 | 61A0906F |
+| 1 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	 | 61A000FF |
+| 2 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	 | 61A0807F |
+| 3 | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	1	1	1	1	1	 | 61A040BF |
+| Power | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	1	1	1	 | 61A0F00F |
+| VOL + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	1	1	0	0	1	1	1	1	 | 61A030CF |
+| VOL - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	1	1	0	0	0	0	0	1	0	0	1	1	1	1	 | 61A0B04F |
+| CH + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	1	0	1	1	1	1	 | 61A050AF |
+| CH - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	1	1	1	  | 61A0D02F |
