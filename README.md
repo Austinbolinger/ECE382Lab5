@@ -96,6 +96,7 @@ A functionality code is taking code from lab 4 like the etch-a-sketch and contro
 This code stumped me for a long time. First of all it broke my Code Composer Studio. Then, I had to restart the coding several times before it finally would compile. That is why you will find the A functionality code in the OneLastAttempt folder. This code was the same as Required functionality but with code from lab 4 tossed in to it. I added the nokia file for drawing boxes on the LCD. I placed the box moving equations in the buttons pressed code. 1, 2, 3, & 0 acted as left, up, right, and down. The next step was to figure out when to initiate the draw box function and initiate the IR sensor functions. I spent many hours rearranging this. I finally just commented out all of the code that involved drawing the box because when that was active, the file broke when compiled. I started uncommenting line by line to see where the code was breaking. I found that when I got to the end the code worked and the remote was able to control the draw box functions as demonstrated. 
 
 
-##Documentation: Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
+##Documentation 
+Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
 
 C2C Wooden helped me figure out how to shift in my array correctly to another variable. He also figured out a hack to ignore an error that kept occuring where the shifting always threw in an extra 0. 
