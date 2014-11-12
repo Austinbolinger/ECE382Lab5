@@ -8,12 +8,15 @@ ECE 382
 
 05 Nov 14
 
-Documentation: Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
 
 Description: Lab 5 is IR signals. Taking lab 3's pong game and making it react to the buttons pressed on a remote control.
 
+
+##Prelab
+
 **Setup**
 This is what the set up looks like in picture form.
+
 ![set up]( https://github.com/Austinbolinger/ECE382Lab8/blob/master/setUp.JPG?raw=true "Set Up" )
 
 O is for Output pin. G is for Ground pin. Vcc is for the power pin. And, the Output pin was actually attached to the Xin pin on the MSP430 not the port 1.3.
@@ -64,7 +67,7 @@ If you look at the picture below, you can see that I mapped out the time0 before
 | 0 | 0 | 617 | 0.0771 | 3.13 | 0.000392 |
 | 0 | 1 | 617 | 0.0771 | 3.13 | 0.000392 |
 
-3.Tabulate this information in Excel, label the rows and columns of your table so that I will know what the information in each cell means.
+3. Tabulate this information in Excel, label the rows and columns of your table so that I will know what the information in each cell means.
 
 | Button | code (not including start and stop bits) | Hex |
 | --- | --- | --- |
@@ -77,3 +80,22 @@ If you look at the picture below, you can see that I mapped out the time0 before
 | VOL - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	0	1	1	0	0	0	0	0	1	0	0	1	1	1	1	 | 61A0B04F |
 | CH + | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	1	0	1	1	1	1	 | 61A050AF |
 | CH - | 0	1	1	0	0	0	0	1	1	0	1	0	0	0	0	0	1	1	0	1	0	0	0	0	0	0	1	0	1	1	1	1	  | 61A0D02F |
+
+##Required Functionality Code
+Required functionality has the remote turn lights on and off on the MSP430.
+
+####Debugging
+The first step was to take the array given in the code and storing the time duration of each "1" count like done in the prelab. That time was split up according to zeros and ones. If the length of the IR wave was close to a zero time like found in the prelab, a zero was stored, and the same procedure was used for storing ones. A neat feature I used was starting my index counting at the start bit and stopping the array storage after 32 bits. I knew each code from the remote would be 32 bits long. So I compared the array to the known codes for each button pressed. The next step was just adding in code to turn on lights for when certain buttons were pressed. I demonstrated that the power toggles both lights, Vol+ turns red on, Vol- red off, Ch+ green on, and Ch- green off.
+
+The biggest problem I had in this portion was shifting. I could not get my code from the array to another variable without C2C Wooden's help on the correct syntax for shifting. I was forgetting the "=" sign.
+
+##A Functionality
+A functionality code is taking code from lab 4 like the etch-a-sketch and controlling the functions with the remote.
+
+####Debugging
+This code stumped me for a long time. First of all it broke my Code Composer Studio. Then, I had to restart the coding several times before it finally would compile. That is why you will find the A functionality code in the OneLastAttempt folder. This code was the same as Required functionality but with code from lab 4 tossed in to it. I added the nokia file for drawing boxes on the LCD. I placed the box moving equations in the buttons pressed code. 1, 2, 3, & 0 acted as left, up, right, and down. The next step was to figure out when to initiate the draw box function and initiate the IR sensor functions. I spent many hours rearranging this. I finally just commented out all of the code that involved drawing the box because when that was active, the file broke when compiled. I started uncommenting line by line to see where the code was breaking. I found that when I got to the end the code worked and the remote was able to control the draw box functions as demonstrated. 
+
+
+##Documentation: Dr. Coulston explained to me why only taking from timer 0 was bad. Now I understand why the data from timer 1 was most important for determining what the count times were.
+
+C2C Wooden helped me figure out how to shift in my array correctly to another variable. He also figured out a hack to ignore an error that kept occuring where the shifting always threw in an extra 0. 
